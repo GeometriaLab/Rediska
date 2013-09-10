@@ -6,7 +6,7 @@ require_once dirname(__FILE__) . '/../../../../Rediska.php';
 /**
  * @see Zend_Application_Resource_ResourceAbstract
  */
-require_once 'Zend/Application/Resource/ResourceAbstract.php';
+//require_once 'Zend/Application/Resource/ResourceAbstract.php';
 
 /**
  * Rediska Zend Application Resource for configure

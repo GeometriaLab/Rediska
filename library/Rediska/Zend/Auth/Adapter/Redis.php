@@ -6,22 +6,22 @@ require_once dirname(__FILE__) . '/../../../../Rediska.php';
 /**
  * @see Zend_Auth_Adapter_Interface
  */
-require_once 'Zend/Auth/Adapter/Interface.php';
+//require_once 'Zend/Auth/Adapter/Interface.php';
 
 /**
  * @see Zend_Auth_Result
  */
-require_once 'Zend/Auth/Result.php';
+//require_once 'Zend/Auth/Result.php';
 
 /**
  * @see Zend_Auth_Adapter_Exception
  */
-require_once 'Zend/Auth/Adapter/Exception.php';
+//require_once 'Zend/Auth/Adapter/Exception.php';
 
 /**
  * @see Zend_Config
  */
-require_once 'Zend/Config.php';
+//require_once 'Zend/Config.php';
 
 /**
  * Redis adapter for Zend_Auth
