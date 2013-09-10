@@ -6,7 +6,7 @@ require_once dirname(__FILE__) . '/../../../../Rediska.php';
 /**
  * @see Zend_Log_Writer_Abstract
  */
-require_once 'Zend/Log/Writer/Abstract.php';
+//require_once 'Zend/Log/Writer/Abstract.php';
 
 /**
  * Redis writer for Zend_Log
@@ -47,7 +47,7 @@ class Rediska_Zend_Log_Writer_Redis extends Zend_Log_Writer_Abstract
      */
     public function setFormatter(Zend_Log_Formatter_Interface $formatter)
     {
-        require_once 'Zend/Log/Exception.php';
+        //require_once 'Zend/Log/Exception.php';
         throw new Zend_Log_Exception(get_class() . ' does not support formatting');
     }
 

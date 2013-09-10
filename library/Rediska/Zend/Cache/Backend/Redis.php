@@ -6,12 +6,12 @@ require_once dirname(__FILE__) . '/../../../../Rediska.php';
 /**
  * @see Zend_Cache_Backend
  */
-require_once 'Zend/Cache/Backend.php';
+//require_once 'Zend/Cache/Backend.php';
 
 /**
  * @see Zend_Cache_Backend_ExtendedInterface
  */
-require_once 'Zend/Cache/Backend/ExtendedInterface.php';
+//require_once 'Zend/Cache/Backend/ExtendedInterface.php';
 
 /**
  * Redis adapter for Zend_Cache

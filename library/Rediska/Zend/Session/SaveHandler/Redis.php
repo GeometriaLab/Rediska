@@ -6,22 +6,22 @@ require_once dirname(__FILE__) . '/../../../../Rediska.php';
 /**
  * @see Zend_Session
  */
-require_once 'Zend/Session.php';
+//require_once 'Zend/Session.php';
 
 /**
  * @see Zend_Config
  */
-require_once 'Zend/Config.php';
+//require_once 'Zend/Config.php';
 
 /**
  * @see Zend_Session_SaveHandler_Interface
  */
-require_once 'Zend/Session/SaveHandler/Interface.php';
+//require_once 'Zend/Session/SaveHandler/Interface.php';
 
 /**
  * @see Zend_Session_SaveHandler_Exception
  */
-require_once 'Zend/Session/SaveHandler/Exception.php';
+//require_once 'Zend/Session/SaveHandler/Exception.php';
 
 /**
  * Redis save handler for Zend_Session

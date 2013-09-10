@@ -6,7 +6,7 @@ require_once dirname(__FILE__) . '/../../../../Rediska.php';
 /**
  * @see Zend_Queue_Adapter_AdapterAbstract
  */
-require_once 'Zend/Queue/Adapter/AdapterAbstract.php';
+//require_once 'Zend/Queue/Adapter/AdapterAbstract.php';
 
 /**
  * Redis adapter for Zend_Queue
@@ -151,7 +151,7 @@ class Rediska_Zend_Queue_Adapter_Redis extends Zend_Queue_Adapter_AdapterAbstrac
         $queueName = $queue->getName();
 
         if (!$this->isExists($queueName)) {
-            require_once 'Zend/Queue/Exception.php';
+            //require_once 'Zend/Queue/Exception.php';
             throw new Zend_Queue_Exception('Queue does not exist:' . $queueName);
         }
 
@@ -183,7 +183,7 @@ class Rediska_Zend_Queue_Adapter_Redis extends Zend_Queue_Adapter_AdapterAbstrac
         $queueName = $queue->getName();
 
         if (!$this->isExists($queueName)) {
-            require_once 'Zend/Queue/Exception.php';
+            //require_once 'Zend/Queue/Exception.php';
             throw new Zend_Queue_Exception('Queue does not exist:' . $queueName);
         }
 
@@ -194,7 +194,7 @@ class Rediska_Zend_Queue_Adapter_Redis extends Zend_Queue_Adapter_AdapterAbstrac
         $result = $this->_queueObjects[$queueName]->prepend($message);
 
         if ($result === false) {
-            require_once 'Zend/Queue/Exception.php';
+            //require_once 'Zend/Queue/Exception.php';
             throw new Zend_Queue_Exception('Failed to insert message into queue:' . $queueName);
         }
 
@@ -205,7 +205,7 @@ class Rediska_Zend_Queue_Adapter_Redis extends Zend_Queue_Adapter_AdapterAbstrac
 
         $classname = $queue->getMessageClass();
         if (!class_exists($classname)) {
-            require_once 'Zend/Loader.php';
+            //require_once 'Zend/Loader.php';
             Zend_Loader::loadClass($classname);
         }
         return new $classname($options);
@@ -231,7 +231,7 @@ class Rediska_Zend_Queue_Adapter_Redis extends Zend_Queue_Adapter_AdapterAbstrac
         $queueName = $queue->getName();
 
         if (!$this->isExists($queueName)) {
-            require_once 'Zend/Queue/Exception.php';
+            //require_once 'Zend/Queue/Exception.php';
             throw new Zend_Queue_Exception('Queue does not exist:' . $queueName);
         }
 
@@ -255,7 +255,7 @@ class Rediska_Zend_Queue_Adapter_Redis extends Zend_Queue_Adapter_AdapterAbstrac
 
         $classname = $queue->getMessageSetClass();
         if (!class_exists($classname)) {
-            require_once 'Zend/Loader.php';
+            //require_once 'Zend/Loader.php';
             Zend_Loader::loadClass($classname);
         }
         return new $classname($options);
