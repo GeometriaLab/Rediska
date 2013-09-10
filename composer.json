@@ -1,5 +1,5 @@
 {
-    "name": "geometria-lab/rediska",
+    "name": "geometria-lab/rediska-without-zend-requires",
     "description": "Full-featured PHP client for key-value database Redis",
     "authors": [
         {
